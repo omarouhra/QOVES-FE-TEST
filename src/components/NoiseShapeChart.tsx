@@ -125,7 +125,7 @@ export default function NoiseShapeChart() {
             div.id = "chartjs-tooltip";
             div.innerHTML = `
                 <div class="bg-[#2a3441] text-white p-4 rounded-lg shadow-xl w-[250px]">
-                    <p class="text-xs text-gray-300 font-zagma">
+                    <p class="text-xs text-gray-300 font-mono">
                     YOUR VALUE <span class="float-right">IDEAL 0.52</span>
                     </p>
                     <p class="text-4xl mt-4 text-white"><span class="text-[#758084]">0.<span/><span class="text-white">49</span></p>
@@ -165,7 +165,7 @@ export default function NoiseShapeChart() {
           {/* /@ts-expect-error: type */}
           <Line ref={chartRef} data={data} options={options} />
         </div>
-        <div className="grid grid-cols-3 text-center text-[#758084] text-[8px] font-zagma">
+        <div className="grid grid-cols-3 text-center text-[#758084] text-[8px] font-mono">
           <p>BELOW AVERAGE</p>
           <p>AVERAGE</p>
           <p>ABOVE AVERAGE</p>
