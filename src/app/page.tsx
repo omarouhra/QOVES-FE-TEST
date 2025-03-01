@@ -8,7 +8,7 @@ import NoiseShapeChart from "@/components/NoiseShapeChart";
 
 export default function Home() {
   return (
-    <section className="space-y-4">
+    <section className="space-y-4 pt-2 md:pt-3">
       {/* Header */}
       <section className="flex items-center justify-between space-x-3 py-3">
         <hr className="h-px w-full text-[#F2F2F2]" />

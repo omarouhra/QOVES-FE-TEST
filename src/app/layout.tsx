@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${PpNeueMonteral.className} ${zagma.className}`}>
-        <main className="max-w-[1080px] mx-auto p-2">{children}</main>
+        <main className="max-w-[1080px] mx-auto p-2 lg:p-0">{children}</main>
       </body>
     </html>
   );

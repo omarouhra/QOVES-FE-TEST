@@ -108,8 +108,8 @@ const Carousel = () => {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between pl-2.5">
-        <div className="flex items-center space-x-4 font-mono">
+      <div className="flex items-center justify-between md:pl-2.5">
+        <div className="flex items-center space-x-2 md:space-x-4 font-mono">
           <p className="text-[#758084] uppercase text-xs tracking-tight">
             Noise parameters
           </p>
