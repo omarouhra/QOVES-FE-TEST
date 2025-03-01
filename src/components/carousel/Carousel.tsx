@@ -158,7 +158,7 @@ const Carousel = () => {
         >
           <div
             className={cn(
-              "h-full w-12 absolute -right-0",
+              "h-full absolute -right-0 opacity-0 md:opacity-100",
               activeIndex === carouselCards.length - 1
                 ? "bg-transparent"
                 : "bg-gradient-to-r to-white"

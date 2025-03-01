@@ -46,7 +46,12 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Image */}
           <section className="w-full h-[300px] md:h-[590px] lg:h-full relative rounded-xl border border-[#F2F2F2] overflow-hidden md:col-span-2 lg:row-span-2 lg:col-span-1 lg:col-start-2 bg-white">
-            <Image src={noiseImage} alt="noise image" fill objectFit="cover" />
+            <Image
+              src={noiseImage}
+              alt="noise image"
+              fill
+              className="object-cover"
+            />
           </section>
 
           {/* Explanation */}

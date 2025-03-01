@@ -124,7 +124,7 @@ export default function NoiseShapeChart() {
             const div = document.createElement("div");
             div.id = "chartjs-tooltip";
             div.innerHTML = `
-                <div class="bg-[#2a3441] text-white p-4 rounded-lg shadow-xl w-[250px]">
+                <div class="hidden lg:block bg-[#2a3441] text-white p-4 rounded-lg shadow-xl w-[250px]">
                     <p class="text-xs text-[#758084] font-mono">
                     YOUR VALUE  <span class="float-right">IDEAL <span class="float-right text-white ml-1.5"> 0.52</span></span>
                     </p>
