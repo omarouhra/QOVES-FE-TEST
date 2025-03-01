@@ -1,6 +1,6 @@
 import Carousel from "@/components/carousel/Carousel";
 import Image from "next/image";
-import noiseImage from "../../public/noise.png";
+import noiseImage from "../../public/noise.webp";
 import { CircleAlert } from "lucide-react";
 import Link from "next/link";
 import { Dropdown } from "@/components/kit/Dropdown";
