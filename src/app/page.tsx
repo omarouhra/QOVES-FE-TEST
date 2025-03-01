@@ -1,6 +1,12 @@
+import Carousel from "@/components/carousel/Carousel";
+import Image from "next/image";
+import noiseImage from "../../public/noise.png";
+import { CircleAlert } from "lucide-react";
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <section>
+    <section className="space-y-4">
       {/* Header */}
       <section className="flex items-center justify-between space-x-3 py-3">
         <hr className="h-px w-full text-[#F2F2F2]" />
@@ -10,9 +16,9 @@ export default function Home() {
         <hr className="h-px w-full text-[#F2F2F2]" />
       </section>
 
-      {/* Nose Features */}
+      {/* Noise Features */}
       <section className="border border-[#F2F2F2] p-6 rounded-xl space-y-5">
-        <p className=" font-zagma text-[#758084] uppercase text-xs tracking-tight">
+        <p className=" font-mono text-[#758084] uppercase text-xs tracking-tight">
           Noise features
         </p>
         <div className="space-y-4">
@@ -30,12 +36,16 @@ export default function Home() {
       </section>
 
       {/* Container */}
-
-      <section>
+      <section className="border border-[#F2F2F2] rounded-xl space-y-4 p-3">
         {/* Carousel */}
-        <section></section>
+        <section>
+          <Carousel />
+        </section>
+
         {/* Image */}
-        <section></section>
+        <section className="w-full h-[300px] md:h-[590px] relative rounded-xl border border-[#F2F2F2] overflow-hidden md:col-span-2 lg:row-span-2 lg:col-span-1 lg:col-start-2 bg-white">
+          <Image src={noiseImage} alt="noise image" fill objectFit="cover" />
+        </section>
 
         {/* Explanation */}
         <section></section>
