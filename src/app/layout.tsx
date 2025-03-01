@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "We give customers honest and realistic beauty advice on physical looks using scientific literature and a multidisciplinary approach to aesthetics.",
 };
 
-const zagma = localFont({ src: "./fonts/zagma/Book.otf" });
+const zagma = localFont({ src: "./fonts/zagma/book.otf" });
 
 const PpNeueMonteral = localFont({
   src: [
