@@ -3,10 +3,10 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 
-
 export const metadata: Metadata = {
   title: "QOVES Frontend Test",
-  description: "We give customers honest and realistic beauty advice on physical looks using scientific literature and a multidisciplinary approach to aesthetics.",
+  description:
+    "We give customers honest and realistic beauty advice on physical looks using scientific literature and a multidisciplinary approach to aesthetics.",
 };
 
 const zagma = localFont({ src: "./fonts/zagma/Book.otf" });
@@ -48,10 +48,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${PpNeueMonteral.className} ${zagma.className}`}
-      >
-        {children}
+      <body className={`${PpNeueMonteral.className} ${zagma.className}`}>
+        <main className="max-w-[1080px] mx-auto p-2">{children}</main>
       </body>
     </html>
   );
