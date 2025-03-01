@@ -127,7 +127,7 @@ const Carousel = () => {
           <button
             className={cn(
               "p-2.5 border border-[#F2F2F2] rounded-lg cursor-pointer",
-              activeIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+              activeIndex === 0 ? "opacity-50 disabled:cursor-not-allowed" : ""
             )}
             onClick={handlePrevious}
             aria-label="Previous"
@@ -139,7 +139,7 @@ const Carousel = () => {
             className={cn(
               "p-2.5 border border-[#F2F2F2] rounded-lg cursor-pointer",
               activeIndex === carouselCards.length - 1
-                ? "opacity-50 cursor-not-allowed"
+                ? "opacity-50 disabled:cursor-not-allowed"
                 : ""
             )}
             onClick={handleNext}
@@ -158,7 +158,7 @@ const Carousel = () => {
         >
           <div
             className={cn(
-              "h-full absolute -right-0 opacity-0 md:opacity-100",
+              "h-full w-12 absolute -right-0 opacity-0 md:opacity-100",
               activeIndex === carouselCards.length - 1
                 ? "bg-transparent"
                 : "bg-gradient-to-r to-white"
