@@ -21,18 +21,18 @@ export default function Home() {
       {/* Noise Features */}
       <section className="border border-[#F2F2F2] p-6 rounded-xl space-y-5">
         <p className=" font-mono text-[#758084] uppercase text-xs tracking-tight">
-          Noise features
+          Nose Proportions
         </p>
         <div className="space-y-4">
-          <h1 className="text-2xl md:text-[32px] lg:text-[40px] text-[#121212] leading-7 md:leading-8  tracking-tight font-meduim ">
+          <h1 className="text-2xl md:text-[32px] lg:text-[40px] text-[#121212] leading-7 md:leading-8 lg:leading-[48px] tracking-tight font-medium">
             A <span className="text-[#9AAEB5]">review</span> of your nose’s
             proportions
           </h1>
           <p className="text-[#121212] leading-[18px] max-w-lg md:leading-5">
             The nose is a feature that should be considered{" "}
-            <span className="font-semibold">relative</span> to others,
-            influencing the overall side profile
-            <span className="font-semibold"> harmony.</span>
+            <span className="font-medium">relative</span> to others, influencing
+            the overall side profile
+            <span className="font-medium"> harmony.</span>
           </p>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <p className="text-[#121212] leading-[18px] md:max-w-sm md:leading-5 ">
               Your nose has{" "}
-              <span className="font-semibold"> balanced projection</span>, which
+              <span className="font-medium"> balanced projection</span>, which
               means that its length from the face is at an attractive
               proportion.
             </p>

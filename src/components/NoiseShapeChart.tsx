@@ -174,7 +174,7 @@ export default function NoiseShapeChart() {
 
       <div className="bg-[#F2F5F5] p-2 rounded-[6px] text-xs md:text-base text-[#3D5861]">
         Your nasal prominence is in the
-        <span className="font-semibold"> 41st</span> percentile (average)
+        <span className="font-medium"> 41st</span> percentile (average)
       </div>
     </div>
   );

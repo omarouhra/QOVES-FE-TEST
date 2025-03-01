@@ -27,7 +27,7 @@ export const Card = ({ title, subtitle, variant = "default" }: CardProps) => {
       </p>
       <h2
         className={cn(
-          "text-lg md:text-2xl font-semibold",
+          "text-lg md:text-2xl font-medium",
           variant === "highlighted" ? "text-[#E8E8E8]" : "text-[#121212]"
         )}
       >
