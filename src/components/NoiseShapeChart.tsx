@@ -165,14 +165,14 @@ export default function NoiseShapeChart() {
           {/* /@ts-expect-error: type */}
           <Line ref={chartRef} data={data} options={options} />
         </div>
-        <div className="grid grid-cols-3 text-center text-[#758084] text-[8px] font-mono">
+        <div className="grid grid-cols-3 text-center text-[#758084] text-[8px] font-mono font-normal">
           <p>BELOW AVERAGE</p>
           <p>AVERAGE</p>
           <p>ABOVE AVERAGE</p>
         </div>
       </div>
 
-      <div className="bg-[#F2F5F5] p-2 rounded-[6px] text-xs md:text-base text-[#3D5861]">
+      <div className="bg-[#F2F5F5] py-2 px-3 rounded-[6px] text-xs md:text-base text-[#3D5861]">
         Your nasal prominence is in the
         <span className="font-medium"> 41st</span> percentile (average)
       </div>

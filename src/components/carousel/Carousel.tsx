@@ -5,6 +5,7 @@ import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Card } from "./Card";
 import { cn } from "../../../utils/cn";
 import Link from "next/link";
+import Subtitle from "../kit/subtitle";
 
 const carouselCards = [
   { subtitle: "PROJECTION", title: "Balanced" },
@@ -110,9 +111,7 @@ const Carousel = () => {
     <div className="space-y-3">
       <div className="flex items-center justify-between md:pl-2.5">
         <div className="flex items-center space-x-2 md:space-x-4 font-mono">
-          <p className="text-[#758084] uppercase text-xs tracking-tight">
-            Noise parameters
-          </p>
+          <Subtitle text="Nose parameters" />
           <Link
             title="QOVES landing page"
             href="https://www.qoves.com/"
@@ -120,7 +119,7 @@ const Carousel = () => {
             className="group text-[#485DFF] flex items-center justify-center space-x-1 text-xs tracking-tight cursor-pointer"
           >
             <p className="uppercase">view all</p>
-            <ArrowUpRight className="size-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-150" />
+            <ArrowUpRight className="size-3 -translate-y-0.2 translate-x-0.2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-150" />
           </Link>
         </div>
         <div className="space-x-2">

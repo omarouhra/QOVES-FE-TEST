@@ -1,10 +1,11 @@
 import Carousel from "@/components/carousel/Carousel";
-import Image from "next/image";
-import noiseImage from "../../public/noise.webp";
-import { CircleAlert } from "lucide-react";
-import Link from "next/link";
+import Info from "@/components/icons/Info";
 import { Dropdown } from "@/components/kit/Dropdown";
+import Subtitle from "@/components/kit/subtitle";
 import NoiseShapeChart from "@/components/NoiseShapeChart";
+import Image from "next/image";
+import Link from "next/link";
+import noiseImage from "../../public/noise.webp";
 
 export default function Home() {
   return (
@@ -12,27 +13,27 @@ export default function Home() {
       {/* Header */}
       <section className="flex items-center justify-between space-x-3 py-3">
         <hr className="h-px w-full text-[#F2F2F2]" />
-        <p className="text-[#758084] whitespace-nowrap uppercase text-xs font-mono">
-          Noise chapter 2
-        </p>
+        <Subtitle text="Nose chapter 2" />
         <hr className="h-px w-full text-[#F2F2F2]" />
       </section>
 
       {/* Noise Features */}
       <section className="border border-[#F2F2F2] p-6 rounded-xl space-y-5">
-        <p className=" font-mono text-[#758084] uppercase text-xs tracking-tight">
-          Nose Proportions
-        </p>
+        <Subtitle text="Nose Proportions" />
         <div className="space-y-4">
-          <h1 className="text-2xl md:text-[32px] lg:text-[40px] text-[#121212] leading-7 md:leading-8 lg:leading-[48px] tracking-tight font-medium">
+          <h1
+            className="text-[#121212] font-sans font-medium text-[24px] leading-[28px] tracking-[0em] 
+               md:text-[32px] md:leading-[36px] md:tracking-[-0.015em] 
+               lg:text-[40px] lg:leading-[48px] lg:tracking-[-0.015em]"
+          >
             A <span className="text-[#9AAEB5]">review</span> of your nose’s
             proportions
           </h1>
           <p className="text-[#121212] leading-[18px] max-w-lg md:leading-5">
             The nose is a feature that should be considered{" "}
-            <span className="font-medium">relative</span> to others, influencing
-            the overall side profile
-            <span className="font-medium"> harmony.</span>
+            <span className="font-medium font-sans">relative</span> to others,
+            influencing the overall side profile
+            <span className="font-medium font-sans"> harmony.</span>
           </p>
         </div>
       </section>
@@ -57,17 +58,15 @@ export default function Home() {
           {/* Explanation */}
           <section className="border border-[#F2F2F2] p-3 rounded-xl bg-[#FAFAFA] flex flex-col justify-between lg:row-start-1 min-h-[164px]  lg:min-h-[172px]">
             <div className="flex items-center justify-between">
-              <p className="text-[#758084] uppercase text-xs tracking-tight font-mono">
-                Explanation
-              </p>
+              <Subtitle text="Explanation" />
               <Link
                 title="QOVES landing page"
                 href="https://www.qoves.com/"
                 target="_blank"
               >
                 <div className="hidden md:flex bg-[#F2F2F2] px-2 p-[5px] rounded-full items-center justify-center space-x-2 text-[#758084] cursor-pointer hover:bg-[#e7e7e7] duration-300">
-                  <p className="text-sm">Appendix</p>
-                  <CircleAlert className="size-[15px]" />
+                  <p className="text-sm font-sans font-light">Appendix</p>
+                  <Info />
                 </div>
               </Link>
             </div>
@@ -82,9 +81,7 @@ export default function Home() {
           {/* Noise Shape */}
           <section className="border border-[#F2F2F2] p-3 rounded-xl bg-[#FAFAFA] space-y-5">
             <div className="flex items-center justify-between">
-              <p className="text-[#758084] uppercase text-xs tracking-tight font-mono">
-                Nose Shape
-              </p>
+              <Subtitle text="Nose Shape" />
               <Dropdown />
             </div>
 
