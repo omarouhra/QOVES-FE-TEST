@@ -48,7 +48,28 @@ export default function Home() {
         </section>
 
         {/* Explanation */}
-        <section></section>
+        <section className="border border-[#F2F2F2] p-3 rounded-xl bg-[#FAFAFA] flex flex-col justify-between lg:row-start-1 lg:min-h-[172px]">
+          <div className="flex items-center justify-between">
+            <p className="text-[#758084] uppercase text-xs tracking-tight font-mono">
+              Explanation
+            </p>
+            <Link
+              title="QOVES landing page"
+              href="https://www.qoves.com/"
+              target="_blank"
+            >
+              <div className="hidden md:flex bg-[#F2F2F2] px-2 p-[5px] rounded-full items-center justify-center space-x-2 text-[#758084] cursor-pointer hover:bg-[#e7e7e7] duration-300">
+                <p className="text-sm">Appendix</p>
+                <CircleAlert className="size-[15px]" />
+              </div>
+            </Link>
+          </div>
+          <p className="text-[#121212] leading-[18px] md:max-w-sm md:leading-5 ">
+            Your nose has{" "}
+            <span className="font-semibold"> balanced projection</span>, which
+            means that its length from the face is at an attractive proportion.
+          </p>
+        </section>
 
         {/* Noise Shape */}
         <section></section>
