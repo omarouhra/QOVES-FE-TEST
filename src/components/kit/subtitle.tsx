@@ -10,7 +10,7 @@ const Subtitle = ({ text, className }: SubtitleProps) => {
   return (
     <p
       className={cn(
-        "text-[#758084] whitespace-nowrap uppercase text-xs font-mono tracking-[-0.005em]",
+        "text-[#758084] whitespace-nowrap uppercase text-xs font-light font-mono tracking-[-0.005em]",
         className
       )}
     >

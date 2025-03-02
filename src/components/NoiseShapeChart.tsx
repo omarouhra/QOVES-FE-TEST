@@ -161,7 +161,7 @@ export default function NoiseShapeChart() {
   return (
     <div className="flex flex-col justify-between space-y-5">
       <div className="w-full">
-        <div className="w-full h-[153px] aspect-video">
+        <div className="w-full h-[153px] lg:h-[200px] aspect-video">
           {/* /@ts-expect-error: type */}
           <Line ref={chartRef} data={data} options={options} />
         </div>

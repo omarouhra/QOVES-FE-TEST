@@ -13,7 +13,7 @@ export const Card = ({ title, subtitle, variant = "default" }: CardProps) => {
         "p-3 h-[136px] min-w-[161px] md:min-w-[221px] border rounded-lg flex flex-col justify-between text-left cursor-pointer duration-300",
         variant === "highlighted"
           ? "bg-[#2D3B41] border-[#B0B0B0]"
-          : "bg-[#F2F2F2] border-[#F2F2F2]"
+          : "bg-[#FAFAFA] border-[#F2F2F2]"
       )}
     >
       <p

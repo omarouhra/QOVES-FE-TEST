@@ -22,9 +22,9 @@ export default function Home() {
         <Subtitle text="Nose Proportions" />
         <div className="space-y-4">
           <h1
-            className="text-[#121212] font-sans font-medium text-[24px] leading-[28px] tracking-[0em] 
-               md:text-[32px] md:leading-[36px] md:tracking-[-0.015em] 
-               lg:text-[40px] lg:leading-[48px] lg:tracking-[-0.015em]"
+            className="text-[#121212] font-medium  text-[24px] leading-[28px] tracking-[0em]
+               md:text-[32px] md:leading-[36px] md:tracking-[-0.015em]
+               lg:text-[40px] lg:leading-[46px]"
           >
             A <span className="text-[#9AAEB5]">review</span> of your nose’s
             proportions
@@ -39,14 +39,14 @@ export default function Home() {
       </section>
 
       {/* Container */}
-      <section className="border border-[#F2F2F2] rounded-xl space-y-4 p-3">
+      <section className="border border-[#F2F2F2] rounded-xl space-y-1 p-3">
         {/* Carousel */}
         <section>
           <Carousel />
         </section>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {/* Image */}
-          <section className="w-full h-[300px] md:h-[590px] lg:h-full relative rounded-xl border border-[#F2F2F2] overflow-hidden md:col-span-2 lg:row-span-2 lg:col-span-1 lg:col-start-2 bg-white">
+          <section className="w-full h-[300px] md:h-[590px] lg:h-[570px] relative rounded-xl border border-[#F2F2F2] overflow-hidden md:col-span-2 lg:row-span-2 lg:col-span-1 lg:col-start-2 bg-[#FAFAFA]">
             <Image
               src={noiseImage}
               alt="noise image"
@@ -56,7 +56,7 @@ export default function Home() {
           </section>
 
           {/* Explanation */}
-          <section className="border border-[#F2F2F2] p-3 rounded-xl bg-[#FAFAFA] flex flex-col justify-between lg:row-start-1 min-h-[164px]  lg:min-h-[172px]">
+          <section className="border border-[#F2F2F2] p-3 rounded-xl bg-[#FAFAFA] flex flex-col justify-between lg:row-start-1 min-h-[164px] lg:min-h-[172px]">
             <div className="flex items-center justify-between">
               <Subtitle text="Explanation" />
               <Link

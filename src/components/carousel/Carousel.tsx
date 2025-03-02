@@ -125,7 +125,7 @@ const Carousel = () => {
         <div className="space-x-2">
           <button
             className={cn(
-              "p-2.5 border border-[#F2F2F2] rounded-lg cursor-pointer",
+              "p-2 border border-[#F2F2F2] rounded-lg cursor-pointer",
               activeIndex === 0 ? "opacity-50 disabled:cursor-not-allowed" : ""
             )}
             onClick={handlePrevious}
@@ -136,7 +136,7 @@ const Carousel = () => {
           </button>
           <button
             className={cn(
-              "p-2.5 border border-[#F2F2F2] rounded-lg cursor-pointer",
+              "p-2 border border-[#F2F2F2] rounded-lg cursor-pointer",
               activeIndex === carouselCards.length - 1
                 ? "opacity-50 disabled:cursor-not-allowed"
                 : ""
@@ -152,7 +152,7 @@ const Carousel = () => {
       <div className="relative">
         <div
           ref={containerRef}
-          className="flex gap-4 overflow-x-auto scrollbar-hide pb-2 scroll-smooth"
+          className="flex gap-3 overflow-x-auto scrollbar-hide pb-2 scroll-smooth"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           <div
